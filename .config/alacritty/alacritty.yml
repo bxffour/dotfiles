@@ -1,0 +1,45 @@
+window:
+  padding:
+    x: 10
+    y: 10
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 1
+  dimensions:
+    columns: 100
+    lines: 100
+  startup_mode: Maximized
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: "JetBrains Mono NerdFont"
+    style:  Regular
+  bold:
+    family: "JetBrains Mono NerdFont"
+    style:  Bold
+  italic:
+    family: "JetBrains Mono NerdFont"
+    style:  Italic
+  bold_italic:
+    family: "JetBrains Mono NerdFont"
+    style: Bold Italic
+  size: 10
+draw_bold_text_with_bright_colors: true
+
+import:
+  # - ~/.config/alacritty/themes/gruvbox-material.yml
+  - ~/.config/alacritty/themes/habamax.yml
+
+selection:
+  save_to_clipboard: true
+
+shell:
+  program: /usr/bin/zsh
+
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
